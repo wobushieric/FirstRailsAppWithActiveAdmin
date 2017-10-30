@@ -1,2 +1,11 @@
-<h1>Home#index</h1>
-<p>Find me in app/views/home/index.html.erb</p>
+<h1>Schools</h1>
+
+<%= @schools.each do |school| %>
+	<h2><%= school.name %></h2>
+	<% school.students.each do |student| %>
+		<div class="student">
+			<h3><%= student.name %></h3>
+			<p><%= image_tag(student.image) %></p>
+		</div>
+	<% end %>
+<% end %>
