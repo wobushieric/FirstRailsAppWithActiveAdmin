@@ -1,4 +1,4 @@
-ActiveAdmin.register Student do
+ActiveAdmin.register School do
 # See permitted parameters documentation:
 # https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
 #
@@ -12,5 +12,6 @@ ActiveAdmin.register Student do
 #   permitted
 # end
 
-	permit_params :name, :student_number, :student_id, :email, :image, :school_id
+	permit_params :name, :school_id
+
 end
